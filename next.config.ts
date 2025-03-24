@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   rewrites: async () => {
     return [
       {
+        source: "/blog",
+        destination: "https://blog-builder-demo.vercel.app/blog",
+      },
+      {
         source: "/blog/:path*",
         destination: "https://blog-builder-demo.vercel.app/blog/:path*",
       },
