@@ -5,11 +5,11 @@ const nextConfig: NextConfig = {
   rewrites: async () => {
     return [
       {
-        source: "/",
+        source: "/blog",
         destination: "https://blog-builder-demo.vercel.app/blog",
       },
       {
-        source: "/:path*",
+        source: "/blog/:path*",
         destination: "https://blog-builder-demo.vercel.app/blog/:path*",
       },
     ];
