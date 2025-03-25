@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/",
-        destination: "/blog",
+        destination: "https://blog-builder-demo.vercel.app/blog",
       },
       {
         source: "/blog",
